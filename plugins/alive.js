@@ -65,21 +65,24 @@ Module({
   var menu = `╭═══〘 ${BOT_INFO.split(";")[0]} 〙═══⊷❍
 ┃${star}╭──────────────
 ┃${star}│
-┃${star}│ _*Owner*_ : ${BOT_INFO.split(";")[1]}
-┃${star}│ _*User*_ : ${message.senderName.replace( /[\r\n]+/gm, "" )}
-┃${star}│ _*Mode*_ : ${MODE}
-┃${star}│ _*Server*_ : ${__dirname.startsWith('/skl')?"Heroku":"Private (VPS)"}
-┃${star}│ _*Available RAM*_ : ${used} of ${total}
-┃${star}│ _*Version*_ : ${config.VERSION}
+┃${star}│ _*𝕆𝕨𝕟𝕖𝕣*_ : ${BOT_INFO.split(";")[1]}
+┃${star}│ _*𝕌𝕤𝕖𝕣*_ : ${message.senderName.replace( /[\r\n]+/gm, "" )}
+┃${star}│ _*𝕄𝕠𝕕𝕖*_ : ${MODE}
+┃${star}│ _*𝕊𝕖𝕣𝕧𝕖𝕣*_ : ${__dirname.startsWith('/skl')?"Heroku":"Private (VPS)"}
+┃${star}│ _*𝔸𝕧𝕒𝕚𝕝𝕒𝕓𝕝𝕖 ℝ𝔸𝕄*_ : ${used} of ${total}
+┃${star}│ _*𝕍𝕖𝕣𝕤𝕚𝕠𝕟*_ : ${config.VERSION}
 ┃${star}│
-┃${star}│
-┃${star}│  ▎▍▌▌▉▏▎▌▉▐▏▌▎
-┃${star}│  ▎▍▌▌▉▏▎▌▉▐▏▌▎
+┃${star}│        _                   _ _           
+┃${star}│   __ _| | _____  __  _ __ (_) | ___   _  
+┃${star}│  / _` | |/ _ \ \/ / | '_ \| | |/ / | | |
+┃${star}│ | (_| | |  __/>  <  | |_) | |   <| |_| |
+┃${star}│  \__,_|_|\___/_/\_\ | .__/|_|_|\_\\__,_| 
+┃${star}|                     |_|                       
+┃${star}|
 ┃${star}│   ${BOT_INFO.split(";")[0]}
 ┃${star}│ 
 ┃${star}╰───────────────
 ╰═════════════════⊷
-
 ${cmdmenu}`
 try {
   var _img = await skbuffer(BOT_INFO.split(";")[3]||`https://picsum.photos/800/500`)
@@ -135,7 +138,7 @@ Module({
   const start = new Date().getTime()
   let sent_msg = await message.sendReply('*❮ ᴛᴇsᴛɪɴɢ ᴘɪɴɢ ❯*')
   const end = new Date().getTime()
-  await message.edit('*ʟᴀᴛᴇɴᴄʏ: ' + (end - start) + ' _ᴍs_*',message.jid,sent_msg.key)
+  await message.edit('*𓆩‎✘À𝖑è𝖝 𝕻ì𝖐ù✘𓆪: ' + (end - start) + ' _ᴍs_*',message.jid,sent_msg.key)
 }));
 Module({
   pattern: 'uptime',
